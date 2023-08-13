@@ -1,0 +1,177 @@
+@media screen and (max-width:375px) {
+    .down-arrow{
+        display: none;
+    }
+    #about-cards{
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .about-card{
+        width: 100%;
+    }
+    .about-content-wrapper{
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px 20px;
+    }
+    .about-content-wrapper .image-wrapper{
+        width: 100%;
+    }
+    #Biography{
+        width: 100%;
+    }
+    #Biography p{
+        padding: 0;
+    }
+    #services{
+        padding: 100px 20px;
+    }
+    .services-row{
+        flex-direction: column;
+        gap: 30px;
+        height: fit-content;
+        width: 100%;
+    }
+    .service{
+        height: fit-content;
+    }
+    .allServices{
+        right: 5%;
+    }
+    #services-second-row{
+        display: none;
+    }
+    #make-appointment{
+        height: fit-content;
+    }
+    #make-appointment #cover{
+        background-attachment: initial;
+        background-position: center!important;
+    }
+    #faq{
+        padding: 50px 10px;
+    }
+    #faq .content-wrapper{
+        width: 100%;
+        gap: 50px;
+        margin-top: 100px;
+    }
+    #faq .pitanje-odgovor-wrapper{
+        width: 100%;
+    }
+    #contact{
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+        margin-top: 100px;
+        padding: 50px 20px;
+    }
+    #contact-information{
+        width: 100%;
+    }
+    #contact-form{
+        display: none;
+    }
+    .contact-mail-bg{
+        display: none;
+    }
+    #map{
+        width: 100%;
+        height: 350px;
+    }
+    footer{
+        height: fit-content;
+        width: 100%;
+        padding: 50px 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .footer-column{
+        width: 100%;
+        height: fit-content;
+    }
+}
+@media screen and (min-width:376px) and (max-width:450px) {
+    footer{
+        height: fit-content;
+        width: 100%;
+        padding: 50px 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .footer-column{
+        width: 100%;
+        height: fit-content;
+    }
+}
+@media screen and (min-width:600px) and (max-width:1024px) {
+    footer{
+        height: fit-content;
+        width: 100%;
+        padding: 50px 20px;
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+    .footer-column{
+        width: 40%;
+        height: 50%;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    #make-appointment{
+        height: 50vh;
+    }
+
+    #faq .content-wrapper{
+        width: 60%;
+        margin: 50px auto;
+        gap: 30px;
+    }
+    #faq .pitanje-odgovor-wrapper{
+        width: 50%;
+    }
+    #contact{
+        width: 80%;
+        margin: auto;
+        padding-top: 50px;
+    }
+    #contact h2{
+        position: absolute;
+        left: 50%;
+        top: 70px;
+        transform: translateX(-50%);
+        margin: 0;
+        font-size: 30px;
+    }
+    #contact-information{
+        width: 25%;
+        margin-top: 100px;
+    }
+    #contact-form{
+        width: 25%;
+        margin-top: 100px;
+        /* border: 1px solid red; */
+    }
+    #map{
+        height: 350px;
+        width: 25%;
+        margin-top: 100px;
+    }
+    footer{
+        height: 400px;
+        padding: 0 10%;
+        padding-top: 50px;
+        justify-content: space-evenly;
+    }
+    .footer-column{
+        width: 20%;
+        height: 60%;
+    }
+}
