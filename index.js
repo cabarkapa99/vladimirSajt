@@ -33,6 +33,7 @@ function heroSlideShow(){
     // vrtimo hero slideshow tj carousel
     //dohvatamo potrebne elemente
     const slider = document.getElementById('hero-slider');
+    const wrapper = document.querySelector(".slides-wrapper");
     const heroSlides = document.getElementsByClassName('hero-slide');
     const sliderNav = document.querySelectorAll('.carousel-nav');
     let slideDuration;
@@ -73,13 +74,11 @@ function heroSlideShow(){
     }
 
     //podesavamo sirinu slajda na sirinu pogleda pregledaca
-    let width = window.innerWidth
-    || document.documentElement.clientWidth
-    || document.body.clientWidth;
+    let width = wrapper.clientWidth / 4;
 
-    for(const slide of heroSlides){
-        slide.style.width=width + 'px';
-    }
+    // for(const slide of heroSlides){
+    //     slide.style.width=width + 'px';
+    // }
 
     //podesavamo pocetne pozicije slajdova i zapocinjemo 
     // vremensku rotaciju
@@ -344,11 +343,11 @@ function chat(){
         container.classList.add("hide");
     })
     minimizeContainer.addEventListener("click", ()=>{
-        console.log('pera');
-        const wrapper = document.querySelector(".chat-wrapper");
-        console.log(wrapper.classList);
-        // wrapper.classList.remove("enlarge");
-        wrapper.className="chat-wrapper";
+        wrapper.classList.add("minimized");
+        head.classList.remove("hide");
+        thread.classList.add("hide");
+        warning.classList.add("hide");
+        minimizeContainer.classList.add("hide");
     })
 }
 chat();

@@ -1,4 +1,114 @@
-@media screen and (max-width:375px) {
+@media screen and (max-width:320px) {
+    #logo{
+        width: 60px!important;
+    }
+    .hero-slide-content{
+        gap: 10px;
+        padding: 10px;
+    }
+    .hero-slide-content h2{
+        font-size: 12vw;
+    }
+    .hero-slide-content p{
+        font-size: 5vw;
+    }
+    .hero-slide-content div{
+        width: 100%;
+        justify-content: space-around;
+    }
+    #about-cards{
+        padding: 10px 20px;
+    }
+    .about-card p{
+        font-size: 5vw;
+    }
+    .about-card:first-child i{
+        color: var(--gold);
+        font-size: 32px;
+    }
+    .about-card:nth-child(2) i{
+        font-size: 32px;
+    }
+    .about-card:last-child i{
+        font-size: 32px;
+    }
+    #Biography h1{
+        font-size: 12vw;
+    }
+    #Biography p{
+        font-size: 5vw;
+    }
+    section .heading{
+        font-size: 8vw !important;
+    }
+    .service h2{
+        font-size: 6vw;
+    }
+    .service p{
+        font-size: 4vw;
+    }
+    #make-appointment h2{
+        font-size: 10vw;
+    }
+    #make-appointment p{
+        font-size: 6vw;
+    }
+    #make-appointment .hero-action{
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    #faq .pitanje-odgovor-wrapper .pitanje-wrapper{
+        font-size: 5vw;
+    }
+    .pitanje-odgovor-wrapper .odgovor-wrapper p{
+        font-size: 4vw;
+    }
+    .contact-item i{
+        font-size: 10vw;
+    }
+    .contact-item h3{
+        font-size: 5vw;
+        left: 20px;
+    }
+    .contact-item span{
+        font-size: 5vw;
+        left: 20px;
+    }
+    #footer{
+        font-size: 4vw;
+    }
+    .footer-name{
+        font-size: 10vw;
+    }
+    .footer-logo{
+        font-size: 4vw;
+    }
+    .footer-menu{
+        font-size: 6vw;
+    }
+}
+@media screen and (max-width:450px) {
+    .contact .email{
+        display: none;
+    }
+    #nav{
+        top: 40px;
+        background-color: var(--navy);
+        border-top: 2px solid var(--gold);
+    }
+    #logo{
+        left: 10%;
+        width: 80px;
+    }
+    #hamburger{
+        display: block;
+    }
+    #nav-list{
+        display: none;
+    }
+    .hero-slide-content{
+        width: 100%;
+    }
     .down-arrow{
         display: none;
     }
@@ -6,6 +116,7 @@
         width: 100%;
         flex-direction: column;
         gap: 30px;
+        margin-top: 50px;
     }
     .about-card{
         width: 100%;
@@ -36,6 +147,7 @@
     }
     .service{
         height: fit-content;
+        gap: 10px;
     }
     .allServices{
         right: 5%;
@@ -51,11 +163,11 @@
         background-position: center!important;
     }
     #faq{
-        padding: 50px 10px;
+        padding: 100px 10px;
     }
     #faq .content-wrapper{
         width: 100%;
-        gap: 50px;
+        gap: 30px;
         margin-top: 100px;
     }
     #faq .pitanje-odgovor-wrapper{
@@ -125,10 +237,52 @@
 }
 
 @media screen and (min-width: 1900px) {
+    #logo{
+        left: 40px;
+        width: 100px;
+    }
+    .hero-slide-content{
+        width: 50%;
+    }
+    .hero-slide-content p{
+        width: 80%;
+    }
+    .hero-slide-content div{
+        width: 40%;
+    }
+    .about-card p{
+        font-size: 20px;
+
+    }
+
+    .about-card:first-child i{
+        font-size: 54px;
+    }
+    .about-card:nth-child(2) i{
+        font-size: 54px;
+    }
+    .about-card:last-child i{
+        font-size: 54px;
+    }
+    #Biography h1{
+        font-size: 48px;
+    }
+
+
+
     #make-appointment{
         height: 50vh;
     }
-
+    #make-appointment h2{
+        font-size: 48px;
+    }
+    #make-appointment p{
+        font-size: 28px;
+    }
+    #make-appointment .hero-action{
+        padding: 15px 40px;
+        font-size: 18px;
+    }
     #faq .content-wrapper{
         width: 60%;
         margin: 50px auto;
@@ -137,9 +291,15 @@
     #faq .pitanje-odgovor-wrapper{
         width: 50%;
     }
+    #faq .pitanje-odgovor-wrapper .pitanje-wrapper{
+        font-size: 24px;
+    }
+    .pitanje-odgovor-wrapper .odgovor-wrapper p{
+        font-size: 18px;
+    }
     #contact{
         width: 80%;
-        margin: auto;
+        margin: 100px auto;
         padding-top: 50px;
     }
     #contact h2{
@@ -159,6 +319,17 @@
         margin-top: 100px;
         /* border: 1px solid red; */
     }
+    .contact-item i{
+        font-size: 48px;
+    }
+    .contact-item h3{
+        font-size: 22px;
+        left: 50px;
+    }
+    .contact-item span{
+        font-size: 18px;
+        left: 50px;
+    }
     #map{
         height: 350px;
         width: 25%;
@@ -173,5 +344,17 @@
     .footer-column{
         width: 20%;
         height: 60%;
+    }
+    #footer{
+        font-size: 18px;
+    }
+    .footer-name{
+        font-size: 40px;
+    }
+    .footer-logo{
+        font-size: 18px;
+    }
+    .footer-menu{
+        font-size: 22px;
     }
 }
